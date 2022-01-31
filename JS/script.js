@@ -45,3 +45,20 @@ btn.on('click', function(e) {
   e.preventDefault();
   $('html, body').animate({scrollTop:0}, '300');
 });
+
+
+// Initialize and add the map
+function initMap() {
+  // The location of Bahna
+  const bahna = { lat: 44.72954104287167, lng: 22.470334961374192 };
+  // The map, centered at Bahna
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 15,
+    center: bahna,
+  });
+  // The marker, positioned at Bahna
+  const marker = new google.maps.Marker({
+    position: bahna,
+    map: map,
+  });
+}
