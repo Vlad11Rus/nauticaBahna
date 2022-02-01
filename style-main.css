@@ -1286,7 +1286,25 @@ Footer styles
 /* Set the size of the div element that contains the map */
 #map {
     height: 250px;
-    /* The height is 250 pixels */
+    width: 100%;    
+}
+
+/*--------------------------------------------------------------
+Reservation form
+--------------------------------------------------------------*/
+
+.form-testbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    padding: 20px;
+}
+
+form {
     width: 100%;
-    /* The width is the width of the web page */
-  }
+    padding: 20px;
+    border-radius: 6px;
+    background: hsla(277, 47%, 40%, .85);
+    box-shadow: 0 0 8px hsla(277, 47%, 66%, .85);
+}
