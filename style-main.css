@@ -239,6 +239,7 @@ fieldset {
 legend {
 	border: 0;
 	padding: 0;
+    color: hsla(0, 0%, 100%, .75);
 
 }
 
@@ -1306,6 +1307,20 @@ form {
     width: 100%;
     padding: 20px;
     border-radius: 6px;
+    border-color: lime;
     background: hsla(277, 47%, 40%, .85);
-    box-shadow: 0 0 8px hsla(277, 47%, 66%, .85);
+    box-shadow: 0 0 8px rgba(177, 168, 182, 0.85);
+    color: black;
+}
+
+label {
+    color:hsla(0, 0%, 100%, .75);
+}
+
+.form-banner {
+    color:hsla(0, 0%, 100%, .75);
+}
+
+p {
+    color: hsla(0, 0%, 100%, .75);
 }
