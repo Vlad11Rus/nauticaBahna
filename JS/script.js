@@ -48,6 +48,7 @@ btn.on('click', function(e) {
 
 
 // Initialize and add the map
+
 function initMap() {
   // The location of Bahna
   const bahna = { lat: 44.72954104287167, lng: 22.470334961374192 };
