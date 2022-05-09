@@ -1316,13 +1316,11 @@ form {
 
 label {
     color:hsla(0, 0%, 100%, .75);
+    display: inline-block;
+    width: 140px;
+    text-align: left;
 }
 
 .form-banner {
     color:hsla(0, 0%, 100%, .75);
 }
-
-/* Set the color for paragraph in reservation*/
-/* p {
-    color: hsla(0, 0%, 100%, .75);
-} */

@@ -75,106 +75,101 @@
     </div><!-- #showcase .promo-area -->
 
     <main class="main-area">
-       
+        <div class="form-testbox">
+            <form>
+                <div class="form-banner">
+                    <h1>Reservation Form</h1>
+                </div>
+                <br/>
+                <fieldset>
+                    <legend>Reservation Details</legend>
+                    <div class="columns">
+                        <div class="item">
+                            <label for="fname">Name<span>*</span></label>
+                            <input id="fname" type="text" name="fname" />
+                        </div>
+                        <div class="item">
+                            <label for="eaddress">Email<span>*</span></label>
+                            <input id="eaddress" type="text"   name="eaddress" />
+                        </div>
+                        <div class="item">
+                            <label for="phone">Phone<span>*</span></label>
+                            <input id="phone" type="tel"   name="phone" />
+                        </div>
+                    </div>
+                  
+                </fieldset>
+                <br/>
+                <fieldset>
+                <legend>Dates</legend>
+                <div class="columns">
+                <div class="item">
+                    <label for="checkindate">Check-in Date <span>*</span></label>
+                    <input id="checkindate" type="date" name="checkindate" />
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+                <div class="item">
+                    <label for="checkoutdate">Check-out Date <span>*</span></label>
+                    <input id="checkoutdate" type="date" name="checkoutdate" />
+                    <i class="fas fa-calendar-alt"></i>
+                </div> 
+                <div class="item">
+                    <p>Adults</p>
+                        <select>
+                        <option value="8" disabled selected>Number of adults</option>
+                        <option value="9" >1</option>
+                        <option value="10">2</option>
+                        <option value="11">3</option>
+                        <option value="12">4</option>
+                        <option value="13">5</option>
+                        </select>
+                </div>    
+                <div class="item">
+                    <p>Children</p>
+                        <select>
+                        <option value="14" disabled selected>Number of children</option>
+                        <option value="15" >0</option>
+                        <option value="16">1</option>
+                        <option value="17">2</option>
+                        <option value="18">3</option>
+                        <option value="19">4</option>
+                        <option value="19">5</option>
+                        </select>
+                </div>   
+
+                <div class="item" style=width:100%>
+                    <label for="room">Rooms</label>
+                    <input id="room" type="number" name="room" />
+                </div>
+                    
+              <div class="item">
+              <p>Room type</p>
+              <select>
+              <option value="20" selected></option>
+              <option value="21">Standard</option>
+              <option value="22">Deluxe</option>
+              <option value="23">Suite</option>
+              </select>
+              </div>   
+              </div>
+              <div class="item">
+              <label for="instruction">Anything else?</label>
+              <textarea id="instruction" rows="3"></textarea>
+              </div>
+              </fieldset>
+            
+              <div class="btn-block">
+              <button type="submit" href="/">Submit</button>
+              </div>
+            </form>
+        </div>
 
     </main><!-- .main-area -->
 
     <footer class="footer">
         <section class="    ">
             <div class="widget footer-menu">
-                <div class="form-testbox">
-                    <form>
-                      <div class="form-banner">
-                        <h1>Reservation Form</h1>
-                      </div>
-                      <br/>
-                      <fieldset>
-                        <legend>Reservation Details</legend>
-                        <div class="columns">
-                          <div class="item">
-                            <label for="fname">First Name<span>*</span></label>
-                            <input id="fname" type="text" name="fname" />
-                          </div>
-                          <div class="item">
-                            <label for="lname"> Last Name<span>*</span></label>
-                            <input id="lname" type="text" name="lname" />
-                          </div>
-                          <div class="item">
-                            <label for="city">City<span>*</span></label>
-                            <input id="city" type="text"   name="city" />
-                          </div>
-                          <div class="item">
-                            <label for="eaddress">Email Address<span>*</span></label>
-                            <input id="eaddress" type="text"   name="eaddress" />
-                          </div>
-                          <div class="item">
-                            <label for="phone">Phone<span>*</span></label>
-                            <input id="phone" type="tel"   name="phone" />
-                          </div>
-                          
-                      </fieldset>
-                      <br/>
-                      <fieldset>
-                        <legend>Dates</legend>
-                      <div class="columns">
-                      <div class="item">
-                      <label for="checkindate">Check-in Date <span>*</span></label>
-                      <input id="checkindate" type="date" name="checkindate" />
-                      <i class="fas fa-calendar-alt"></i>
-                      </div>
-                      <div class="item">
-                      <label for="checkoutdate">Check-out Date <span>*</span></label>
-                      <input id="checkoutdate" type="date" name="checkoutdate" />
-                      <i class="fas fa-calendar-alt"></i>
-                      </div> 
-                      <div class="item">
-                      <p>How many adults are coming?</p>
-                      <select>
-                      <option value="8" disabled selected>Number of adults</option>
-                      <option value="9" >1</option>
-                      <option value="10">2</option>
-                      <option value="11">3</option>
-                      <option value="12">4</option>
-                      <option value="13">5</option>
-                      </select>
-                      </div>    
-                      <div class="item">
-                      <p>How many children are coming?</p>
-                      <select>
-                      <option value="14" disabled selected>Number of children</option>
-                      <option value="15" >0</option>
-                      <option value="16">1</option>
-                      <option value="17">2</option>
-                      <option value="18">3</option>
-                      <option value="19">4</option>
-                      <option value="19">5</option>
-                      </select>
-                      </div>   
-                      <div class="item" style=width:100%>
-                      <label for="room">Number of rooms</label>
-                      <input id="room" type="number" name="room" />
-                      </div>
-                      <div class="item">
-                      <p>Room type</p>
-                      <select>
-                      <option value="20" selected></option>
-                      <option value="21">Standard</option>
-                      <option value="22">Deluxe</option>
-                      <option value="23">Suite</option>
-                      </select>
-                      </div>   
-                      </div>
-                      <div class="item">
-                      <label for="instruction">Special Instructions</label>
-                      <textarea id="instruction" rows="3"></textarea>
-                      </div>
-                      </fieldset>
-                    
-                      <div class="btn-block">
-                      <button type="submit" href="/">Submit</button>
-                      </div>
-                    </form>
-                    </div>
+                
             </div><!-- .widget -->
             <div class="widget footer-cta">
                 
