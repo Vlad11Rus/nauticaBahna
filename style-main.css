@@ -1296,7 +1296,7 @@ Reservation form
 --------------------------------------------------------------*/
 
 
-.form-testbox {
+.form-box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1305,7 +1305,8 @@ Reservation form
 }
 
 form {
-    width: 100%;
+    /* width: 100%; */
+    display: flex;
     padding: 20px;
     border-radius: 6px;
     border-color: lime;
@@ -1324,3 +1325,4 @@ label {
 .form-banner {
     color:hsla(0, 0%, 100%, .75);
 }
+
