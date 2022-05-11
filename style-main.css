@@ -1285,7 +1285,7 @@ Footer styles
 }
 
 
-/* Set the size of the div element that contains the map */
+/* Set the size of the div element containing the map */
 #map {
     height: 250px;
     width: 100%;    
@@ -1305,14 +1305,19 @@ Reservation form
 }
 
 form {
-    /* width: 100%; */
     display: flex;
     padding: 20px;
+    flex-direction: column;
+    position: relative;
+    min-width: 0;
+    border: 1px solid;
     border-radius: 6px;
     border-color: lime;
     background: hsla(277, 47%, 40%, .85);
     box-shadow: 0 0 8px rgba(177, 168, 182, 0.85);
     color: black;
+    word-wrap: break-word;
+    background-clip: border-box;
 }
 
 label {
