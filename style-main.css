@@ -1297,17 +1297,16 @@ Reservation form
 
 
 .form-box {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 33.7rem), 1fr));
+    align-content: center;
     justify-content: center;
-    align-items: center;
-    height: inherit;
-    padding: 20px;
 }
 
 form {
     display: flex;
     padding: 20px;
-    flex-direction: column;
+    /* flex-direction: column; */
     position: relative;
     min-width: 0;
     border: 1px solid;

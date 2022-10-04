@@ -47,100 +47,82 @@
 
     </header><!-- .masthead -->
 
-    <div id="showcase" class="promo-area">
-        <div class="front-slider flexslider">
-            <ul class="slides">
-                <li>
-                    <img src="images/mainpromo/welcome01-800.jpg" alt="" data-type="showcase" />
-                </li>
-                <li>
-                    <img src="images/mainpromo/welcome02-800.jpg" alt="" data-type="showcase" />
-                </li>
-                <li>
-                    <img src="images/mainpromo/welcome03-800.jpg" alt="" data-type="showcase" />
-                </li>
-                <li>
-                    <img src="images/mainpromo/welcome04-800.jpg" alt="" data-type="showcase" />
-                </li>
-            </ul>
-        </div><!-- .flexslider -->
-        <div class="promo-content">
-            <div class="promo-text">
-                <h2 class="promo-title">Nautica Bahna</h2>
-                <p class="promo-lede">Un loc în care înflorește liniștea în fiecare dimineață</p>
-            </div><!-- .promo-text -->
-        </div><!-- .promo-content -->
-    </div><!-- #showcase .promo-area -->
-
-    <main class="main-area">
-        <div class="form-box">
-            <form>
-                <div class="form-banner">
-                    <h1>Reservation Form</h1>
+    <div class="form-box">
+        <div id="showcase" class="promo-area">
+            <div class="front-slider flexslider">
+                <ul class="slides">
+                    <li>
+                        <img src="images/mainpromo/welcome01-800.jpg" alt="" data-type="showcase" />
+                    </li>
+                    <li>
+                        <img src="images/mainpromo/welcome02-800.jpg" alt="" data-type="showcase" />
+                    </li>
+                    <li>
+                        <img src="images/mainpromo/welcome03-800.jpg" alt="" data-type="showcase" />
+                    </li>
+                    <li>
+                        <img src="images/mainpromo/welcome04-800.jpg" alt="" data-type="showcase" />
+                    </li>
+                </ul>
+            </div><!-- .flexslider -->
+            <!-- <div class="promo-content">
+                <div class="promo-text">
+                    <h2 class="promo-title">Nautica Bahna</h2>
+                    <p class="promo-lede">Un loc în care înflorește liniștea în fiecare dimineață</p>
                 </div>
-                <br/>
-                <fieldset>
-                    <legend>Reservation Details</legend>
-                    <div class="columns">
-                        <div class="item">
-                            <label for="fname">Name<span>*</span></label>
-                            <input id="fname" type="text" name="fname" />
-                        </div>
-                        <div class="item">
-                            <label for="eaddress">Email<span>*</span></label>
-                            <input id="eaddress" type="text"   name="eaddress" />
-                        </div>
-                        <div class="item">
-                            <label for="phone">Phone<span>*</span></label>
-                            <input id="phone" type="tel"   name="phone" />
-                        </div>
+            </div> -->
+    
+           
+        </div><!-- #showcase .promo-area -->
+        <fieldset>
+            <legend>Reservation Details</legend>
+            <div class="columns">
+                <div class="item">
+                    <!-- <label for="fname">Name<span>*</span></label> -->
+                    <input id="name" type="text" name="name" placeholder="Name" />
+                </div>
+                <div class="item">
+                    <!-- <label for="eaddress">Email<span>*</span></label> -->
+                    <input id="eaddress" type="text" name="eaddress" placeholder="Email" />
+                </div>
+                <div class="item">
+                    <!-- <label for="phone">Phone<span>*</span></label> -->
+                    <input id="phone" type="tel" name="phone" placeholder="Phone" />
+                </div>
+            </div>
+        </fieldset>
+    
+        <br/>
+        <fieldset>
+                <legend>Dates</legend>
+                <div class="columns">
+                    <div class="item">
+                        <!-- <label for="checkindate">Check-in?<span>*</span></label> -->
+                        <input id="checkindate" type="date" name="checkindate" placeholder="Check-in?" />
+                        <i class="fas fa-calendar-alt"></i>
                     </div>
-                  
-                </fieldset>
-                <br/>
-                <fieldset>
-                    <legend>Dates</legend>
-                    <div class="columns">
-                        <div class="item">
-                            <label for="checkindate">Check-in Date <span>*</span></label>
-                            <input id="checkindate" type="date" name="checkindate" />
-                            <i class="fas fa-calendar-alt"></i>
-                        </div>
-                        <div class="item">
-                            <label for="checkoutdate">Check-out Date <span>*</span></label>
-                            <input id="checkoutdate" type="date" name="checkoutdate" />
-                            <i class="fas fa-calendar-alt"></i>
-                        </div> 
-                        <div class="item" style=width:100%>
-                            <label for="adults">Adults</label>
-                            <input id="adults" type="number" name="adults" />
-                        </div>
-                        <div class="item" style=width:100%>
-                            <label for="children">Children</label>
-                            <input id="children" type="number" name="children" />
-                        </div>
-                        <div class="item" style=width:100%>
-                            <label for="room">Rooms</label>
-                            <input id="room" type="number" name="room" />
-                        </div>   
-                    </div>
-                        
+                    <div class="item">
+                        <!-- <label for="checkoutdate">Check-out?<span>*</span></label> -->
+                        <input id="checkoutdate" type="date" name="checkoutdate" placeholder="Check-out?"/>
+                        <i class="fas fa-calendar-alt"></i>
+                    </div> 
                     <div class="item" style=width:100%>
-                        <label for="instruction">Anything else?</label>
-                        <br>
-                        <textarea id="instruction" rows="3" placeholder="Add any relevant information here..."></textarea>
+                        <!-- <label for="adults">Adults</label> -->
+                        <input id="adults" type="number" name="adults" placeholder="Adults?" />
                     </div>
+                    <div class="item" style=width:100%>
+                        <!-- <label for="children">Children</label> -->
+                        <input id="children" type="number" name="children" placeholder="Children?" />
+                    </div>  
+                </div>
+    
+                <div class="btn-block">
+                    <button type="submit" href="/">Request booking!</button>
+                </div>
+        </fieldset>
+    </div>
 
-                    <div class="btn-block">
-                        <button type="submit" href="/">Submit</button>
-                    </div>
-              </fieldset>
-            
-              
-            </form>
-        </div>
 
-    </main><!-- .main-area -->
 
     <footer class="footer">
         <section class="    ">
